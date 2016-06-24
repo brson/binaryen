@@ -100,7 +100,7 @@ SET(binaryen_SOURCES
   src/cfg/Relooper.cpp
   src/wasm.cpp
 )
-ADD_LIBRARY(binaryen SHARED ${binaryen_SOURCES})
+ADD_LIBRARY(binaryen STATIC ${binaryen_SOURCES})
 TARGET_LINK_LIBRARIES(binaryen asmjs ${all_passes} support)
 
 SET(binaryen-shell_SOURCES
